@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify | All your favourites</title>
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="spotify2.css">
+</head>
+<body>
+<div class="createPlaylistForm">
+    <div class="add-playlist-wrap">
+        <div class="cancel-addPlaylist-div">
+            <i class="fa-solid fa-arrow-left cancel-add-playlist"></i>
+            </div>
+            <span class="save" style="cursor:pointer ;">Save</span>
+
+    <h1 class="add-playlist">Add Playlist</h1>
+    <label for="add-title" class="add-title-label">Add Title</label>
+    <input type="text" class="add-playlist-title" placeholder="Add playlist title">
+    <label for="pic" class="add-pic-label">Add picture
+        <input type="file" class="add-playlist-image" accept="image/*">
+    </label>
+  
+</div>
+</div>
+
+ <div class="addSongForm">
+    <div class="add-songs-wrap">
+        <div class="cancel-addSongs-div">
+            <i class="fa-solid fa-arrow-left cancel-add-song"></i>
+            </div>
+            <span class="saveSong" style="cursor:pointer ;">Save</span>
+
+    <h1 class="add-Song">Add Song</h1>
+    <label for="add-title" class="add-title-label">Add Title</label>
+    <input type="text" class="add-Song-title" placeholder="Add Song title">
+    <label for="artistNameLabel">Add Artist Name</label>
+    <input type="text" class="addSongsArtistInput" placeholder="Add artist Name">
+    <label for="pic" class="add-pic-label">Add picture
+        <input type="file" class="add-song-image" accept="image/*">
+    </label>
+    <label for="songUrl" class="add-song-label">Pick Your Mp3 File
+        <input type="file" class="add-mp3" accept=".mp3">
+    </label>
+   
+</div>
+</div> 
+
+<section class="home_search_container">
+<div class="home-icon">
+    <i class="fa-sharp fa-solid fa-house"></i>
+    <span class="home-icon-text">Home</span>
+</div>
+<div class="search-icon">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-icon-text">Search</span>
+</div>
+</section>
+<!-- second section  Library-->
+<section class="library-container">
+  
+<div class="library-heading">
+    <div class="logo-name-wrapper">
+    <i class="fa-solid fa-book library-logo"></i>
+    <span>Your Library</span>
+    </div>
+    <i class="fa-regular fa-plus plus"></i>
+</div>
+<div class="library-playlist-heading">Playlists</div>
+<div class="library-playlist-section">
+</div>
+
+</section>
+<!-- third main section -->
+<section class="main-section">
+
+<!-- onclick -->
+<section class="clicked-section">
+</section>
+<!-- Main -->
+
+<nav class="main-section-nav">
+  <li class="sign-in">Sign-in</li>
+  <li class="sign-up">Sign-up</li>
+</nav>
+<div class="playlist-container">
+<h1 class="greeting-message"></h1>
+<div class="playlists-wrapper">
+</div>
+</div>
+</section>
+
+<footer class="footer">
+    <div class="songs-flex">
+<div class="song-details">
+    <img src="" alt="cover-pic" id="footer-cover">
+    <span class="title-artist-container">
+    <h4 class="playing-song-name"></h4>
+    <p class="playing-song-artist-name" id="footerArtist"></p>
+</span>
+<i class="fa-regular fa-heart heart footer-heart" id="footerHeart"></i>
+
+</div>
+</div>
+
+<div class="player-flex">
+<div class="player"> 
+    <audio src="songs/DownerAtDusk.mp3"></audio>
+    <div class="player-icons">
+        <i id="previous" class="fa-solid fa-backward-step" title="previous"></i>
+        <i id="play" class="fa-solid fa-play" title="play"></i>
+        <i id="next" class="fa-solid fa-forward-step" title="next"></i>
+    </div>
+    <div class="range-container">
+        <span class="current-time ">0:00</span>
+    <input type="range" class="range" id="range" value="0" min="0" max="100">
+    <span class="total-duration ">5:04</span>
+</div>
+</div>
+<div class="sound-controller">
+    <i class="fa-solid fa-volume-high full-volume"></i>
+    <input type="range"  class="volume-range" value="100" min="0" max="100">
+    <!-- <i class="fa-solid fa-volume-low low-volume"></i>
+    <i class="fa-solid fa-volume-xmark mute-volume"></i> -->
+</div>
+</div>
+</div>
+</footer>
+    <!-- <script src="spotify.js"></script> -->
+    <script src="test.js"></script>
+    <script src="HandleMusic.js"></script>
+    <script src="https://kit.fontawesome.com/8bb923acc4.js" crossorigin="anonymous"></script>
+</body>
+</html>

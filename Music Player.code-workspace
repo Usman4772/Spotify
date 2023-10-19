@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\Music Player"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Spotify"
+	}
+}

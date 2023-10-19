@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root{
+    --headings-font: 'Noto Sans', sans-serif;
+    --main-section-color: rgb(72, 24, 16);
+    --side-color:#121212;
+    --green:#1ed760;
+    --range-thumb:#1db954;
+    --main-section-bg:rgb(128, 136, 144);
+    --greeting-font:'Poppins', sans-serif;
+    --playlist-color:rgb(179, 179, 179,.5);
+    }
+
+html{
+    font-size: 62.5%;
+}
+.createPlaylistForm{
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(76, 76, 76, 0.5) ;
+    z-index: 5;
+    position: absolute;
+    /* display: grid; */
+place-items: center;
+display: none;
+}
+.addSongForm{
+    width: 98.5vw;
+    height: 98.5vh;
+    background-color:rgba(76, 76, 76, 0.5) ;
+    z-index: 5;
+    position: absolute;
+    /* display: grid; */
+place-items: center;
+display: none;
+}
+
+    .add-playlist-wrap,.add-songs-wrap{
+        width: 40vw;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        background-color: white;   
+        gap: 2rem;
+        position: relative;
+    }
+    .add-songs-wrap{
+        height: 72vh;
+        gap: 1.5rem;
+
+    }
+    .cancel-addPlaylist-div,.cancel-addSongs-div{
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: var(--side-color);
+        color: white;
+       position: absolute;
+       left: 1rem;
+       top: 1rem;
+       border-radius: 50%;
+       display: grid;
+       place-items: center;
+       cursor: pointer;
+
+    }
+    .add-playlist,.add-Song{
+font-size: 3rem;
+font-family: var(--greeting-font);
+margin-top: 1rem;
+
+    }
+label{
+    font-size: 2rem;
+    font-family: var(--headings-font);
+    color:var(--green)
+}
+.add-playlist-title,.add-Song-title,.addSongsArtistInput{
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--range-thumb);
+    font-family: var(--headings-font);
+    color: var(--side-color);
+
+}
+.add-playlist-title::-moz-placeholder,.add-Song-title::-moz-placeholder,.addSongsArtistInput::-moz-placeholder{
+    font-size: 1.2rem;
+    font-family: var(--headings-font);
+    text-align: center;
+    letter-spacing: .8px;
+    color: var(--side-color);
+
+}
+
+.add-pic-label,.add-song-label{
+    display: inline-block;
+    user-select: none;
+    padding: 1rem 2rem;
+    background-color: var(--side-color);
+    color:white;
+    border-radius: .4rem;
+    font-family: var(--greeting-font);
+position: relative;
+cursor: pointer;
+}
+.add-playlist-image,.add-song-image,.add-mp3{
+ opacity: 0;
+ width:100%;
+ height: 100%;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ inset: 2;
+ cursor: pointer;
+}
+.save,.saveSong{
+    width: 5rem;
+    height:3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background-color:var(--green) ;
+    color: white;
+    font-size: 1.3rem;
+}
+
