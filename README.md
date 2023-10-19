@@ -1,1 +1,1 @@
-# Spotify
+I have been working on this project of Spotify using only HTML CSS and JS ...But there are alot of bugs in it ..for Example when you create a new playlist and add a song in it ..That song's will remain in that playlist only till you close the playlist..once you have closed that palylist all songs are gone ...and also there is one more issue if you add song after first song it will add 2 songs instead of just adding one more ....Also it's incomplete yet so please contribute in it ..Thanks!
